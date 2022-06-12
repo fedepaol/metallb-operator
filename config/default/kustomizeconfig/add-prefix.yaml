@@ -6,3 +6,5 @@ prefix: metallb-operator-
 fieldSpecs:
 - kind: Deployment
   path: metadata/name
+- kind: Daemonset
+  path: metadata/name
