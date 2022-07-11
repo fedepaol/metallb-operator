@@ -97,7 +97,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            quay.io/metallb/metallb-operator
+            quay.io/fpaoline/metallb-operator
           # generate Docker tags based on the following events/attributes
           tags: |
             type=ref,event=branch
