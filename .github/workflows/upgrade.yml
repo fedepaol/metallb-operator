@@ -38,7 +38,7 @@ jobs:
 
     - name: Build image
       run: |
-        docker build . -t ${built_image_prev_release}
+        IMG=${built_image_prev_release} make docker-build
     - name: Create K8s Kind Cluster
       run: |
         ./hack/kind-cluster-without-registry.sh
